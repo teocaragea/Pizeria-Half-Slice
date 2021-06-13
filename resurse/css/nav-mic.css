@@ -1,0 +1,64 @@
+@media screen and (max-width: 500px) {
+    #hamburger {
+        display: block;
+    }
+    ul.meniu {
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+    #ch-menu:checked+ul.meniu {
+        display: block;
+    }
+    nav ul.meniu li {
+        width: 100%;
+    }
+    nav ul.meniu>li ul {
+        position: absolute;
+        width: 100%;
+        z-index: 20;
+    }
+    nav ul.meniu>li li a::before {
+        content: "▷    ";
+        color: #fff;
+    }
+
+    ul.meniu li a::before {
+        position: fixed;
+    }
+    
+    ul.meniu li a:hover::before {
+        width: 100%;
+    }
+    
+    ul.meniu li a:hover {
+        background: var(--c3);
+    }
+
+    #disabled {
+        display: none;
+    }
+
+    #disabled2 {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(-90deg);
+            opacity: 0;
+        }
+        100% {
+            transform: scaleX(0deg);
+            opacity: 1;
+        }
+    }
+    ul.meniu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        animation: rotate .7s ease-in-out forwards;
+        transform-origin: left;
+    }
+}

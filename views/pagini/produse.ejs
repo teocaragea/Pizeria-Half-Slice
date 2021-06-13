@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+
+    <meta name="description" content="Aici veti gasi informatii despre noi">
+    <meta name="keywords" content="produse,pizza">
+    <title>Pizeria Half-Slice-Produse</title>
+    <%- include("../fragmente/head") %>
+</head>
+
+
+<body class="bdy">
+
+    <%- include("../fragmente/header") %>
+
+        <main>
+            <div class="optiuni">
+                <label> Ingredient cheie: <input type="text" id="inp-ingrediente"></label>
+                <label> Pret maxim: <input type="range" id="inp-pret" step="1" min="0" max="70"></label>
+                <label>Categorie:
+                    <select id="inp-categorie">
+                    <option value="toate">toate</option>
+                    <% for( let categorie of locals.categorii) { %>
+                        <option value="<%- categorie.categ %>"><%- categorie.categ %></option>
+                    <% } %>
+                </select>
+                </label>
+                <div>
+                    <div>Produs de post:</div>
+                    <input type="radio" id="da" name="post" value="da">
+                    <label for="da">Da</label>
+                    <input type="radio" id="nu" name="post" value="nu">
+                    <label for="nu">Nu</label>
+                </div>
+                <div>
+                    <div>Metoda de coacere:</div>
+                    <input type="checkbox" id="vatra" name="coacere" value="Vatra">Vatra<br>
+                    <input type="checkbox" id="cuptor" name="coacere" value="Cuptor">Cuptor<br>
+                </div>
+                <div id="gasire-ingr">
+                    <p>Nu exista astfel de produse!</p>
+                </div>
+                <label for="cars">Selectati ingredientele nedorite:</label>
+                <select name="ingr-nedorite" id="ingr-nedorite" multiple>
+                  <option value="cedar">Cedar</option>
+                  <option value="parmezan">Parmezan</option>
+                  <option value="gorgonzola">Gorgonzola</option>
+                  <option value="mozarela">Mozarela</option>
+                  <option value="salam">Salam</option>
+                  <option value="Sunca">Sunca</option>
+                </select>
+
+                <p>
+                    <button id="filtrare">Filtreaza</button>
+                    <button id="sortCrescNume">Sorteaza crescator dupa nume</button>
+                    <button id="sortDescrescNume">Sorteaza descrescator dupa nume</button>
+                    <button id="resetare">Reseteaza</button>
+                    <button id="medie">Media preturilor</button>
+                </p>
+            </div>
+
+            <section>
+                <h3>Produse</h3>
+                <div id="mediaProd">
+                    <p>aaa</p>
+                </div>
+                <% for(let prod of locals.produse){ %>
+                    <article class="produse" id="ar_ent_<%- prod.id %>">
+                        <div class="left">
+                            <p class="categorie">Categorie:
+                                <span class="val-categorie"><%- prod.categorie %></span>
+                            </p>
+                            <p>
+                                <img src="/resurse/imagini/galerie/<%- prod.imagine%>" alt="imagine produs" style="width:40%;height:auto" />
+                            </p>
+                            <p class="descriere">Descriere:
+                                <span class="val-descriere"><%- prod.descriere %></span>
+                            </p>
+                        </div>
+                        <div class="right">
+
+                            <p class="nume">Nume:
+                                <a href="/produs/<%- prod.id %>">
+                                    <span class="val-nume"><%- prod.nume %></span>
+                                </a>
+                            </p>
+                            <p class="pret">Pret:
+                                <span class="val-pret"><%- prod.pret %></span>
+                            </p>
+                            <p class="ingrediente">Ingrediente:
+                                <span class="val-ingrediente"><%- prod.ingrediente %></span>
+                            </p>
+                            <p class="coacere">
+                                <span class="val-coacere"><%- prod.coacere %></span>
+                            </p>
+                            <time class="time">Data introducerii:
+                                <%- prod.introducere %>
+                            </time>
+                            <p class="post">Produs de post:
+                                <span class="val-post">
+                                    <% if(prod.post == false) { %>
+                                    <%- 'nu' %>
+                                        <% } %>
+                                            <%if(prod.post == true) { %>
+                                                <%- 'da' %>
+                                                    <% } %>
+                                                </span>
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <% }%>
+            </section>
+
+        </main>
+
+        <%- include("../fragmente/footer") %>;
+            <script type="text/javascript" src="/resurse/js/produse.js"></script>
+
+</body>
+
+</html>

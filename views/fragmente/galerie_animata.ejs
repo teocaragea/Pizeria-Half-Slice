@@ -1,0 +1,13 @@
+        <div class="border">
+            <div class="slides">
+            <% let count=1; %>
+            <% for (let im of locals.galerieAnimata) { %>
+                <div id="item<%- count %>" class="stackImages" title="<%- im.nume %>">
+                    <img src="<%- im.mare %>" alt="<%- im.nume %>">
+                </div>
+                <% count +=1; %>
+            <% } %>
+            <div class="text"></div>
+        </div>
+        </div>
+        

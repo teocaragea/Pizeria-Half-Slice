@@ -1,0 +1,71 @@
+{
+    "cale_galerie": "resurse/imagini/galerie",
+    "imagini": [{
+            "cale_relativa": "carbonara.jpg",
+            "nume": "Pizza Carbonara",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "capriciosa.jpg",
+            "nume": "Pizza Capriciosa",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "diavola.jpg",
+            "nume": "Pizza Diavola",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "hawaiana.jpg",
+            "nume": "Pizza Hawaiana",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "margherita.jpg",
+            "nume": "Pizza Margherita",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "prosciutto.jpg",
+            "nume": "Pizza Prosciutto",
+            "descriere": "text descriere",
+            "timp": "zi"
+        },
+        {
+            "cale_relativa": "qf.jpg",
+            "nume": "Pizza Quattro Formaggi",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "qs.jpg",
+            "nume": "Pizza Quattro Stagioni",
+            "descriere": "text descriere",
+            "timp": "dimineata"
+        },
+        {
+            "cale_relativa": "rustica.jpg",
+            "nume": "Pizza Rustica",
+            "descriere": "text descriere",
+            "timp": "zi"
+        },
+        {
+            "cale_relativa": "taraneasca.jpg",
+            "nume": "Pizza Taraneasca",
+            "descriere": "text descriere",
+            "timp": "zi"
+        },
+        {
+            "cale_relativa": "vegetariana.jpg",
+            "nume": "Pizza Vegetariana",
+            "descriere": "text descriere",
+            "timp": "zi"
+        }
+
+    ]
+}

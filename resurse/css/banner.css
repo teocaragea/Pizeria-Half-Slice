@@ -1,0 +1,87 @@
+@keyframes banner {
+    7% {
+        display: none;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+        color: var(--c2);
+        border-bottom: 20px solid;
+        background-color: white;
+    }
+    22% {
+        opacity: 1;
+        color: var(--c2);
+        border-bottom: 20px solid;
+        background-color: white;
+        border-color: var(--c3);
+    }
+    29% {
+        opacity: 1;
+        color: var(--c2);
+        border-bottom: 20px solid;
+        background-color: white;
+        border-color: var(--c3);
+    }
+    36% {
+        opacity: 1;
+        color: var(--c2);
+        border-bottom: 20px solid;
+        background-color: white;
+        border-color: var(--c3);
+
+    }
+    43% {
+        opacity: 1;
+        color: var(--c2);
+        border-bottom: 20px solid;
+        background-color: white;
+        border-color: var(--c3);
+
+    }
+    50% {
+        opacity: 1;
+        color: var(--c2);
+        background-color: white;
+        border-color: var(--c3);
+    }
+    65% {
+        opacity: 1;
+        color: var(--c2);
+        background-color: white;
+        border-color: var(--c3);
+    }
+    80% {
+        opacity: 1;
+        color: var(--c2);
+        background-color: white;
+        border-color: var(--c3);
+    }
+    95% {
+        opacity: 1;
+        color: var(--c2);
+        background-color: white;
+        border-color: var(--c3);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.banner {
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    align-content: center;
+    justify-content: center; 
+    height: 100%;
+    font-size: 1.8em;
+    color: transparent;
+    animation-name: banner;
+    animation-delay: 3s;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    margin:auto;
+    width: 99%;   
+    z-index: 20;
+}

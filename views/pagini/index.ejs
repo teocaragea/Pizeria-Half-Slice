@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+
+
+<head>
+
+    <title>Pizeria Half-Slice </title>
+    <%- include("../fragmente/head") %>
+        <meta name="description" content="Bine ati venit la restaurantul nostru unde puteti beneficia de o gama larga de produse">
+        <meta name="keywords" content="Pizza,topping,desert">
+</head>
+
+
+<body class="resize-animation-stopper">
+    <div class="print-banner">
+        Acesta este un proiect scolar!
+    </div>
+    <%- include("../fragmente/header") %>
+        <main id="main">
+            <h2>Comanda minima este de 30 de lei.</h2>
+            <div class="container">
+
+                <div class="item1">
+
+
+                    <div class="item11">
+                        <dl>
+                            <dt>Preturile contin TVA si se pot modifica.</dt>
+                            <dd>In functie de taxe</dd>
+                            <dt>Sosuri</dt>
+                            <dd>Puteti alege intre:dulce acrisor, ketchup si maioneaza</dd>
+                            <dt>Desert</dt>
+                            <dd>Avem o multime de prajituri ca desert, pentru a satisface toate gusturile, cum ar fi tiramisu, amandina, eclere.</dd>
+                        </dl>
+                        <img src="/resurse/imagini/piz.jpg" alt="Flowers in Chania" id="piz">
+                    </div>
+
+                    <div class="item12">
+                        <img src="/resurse/imagini/sos.jpg" alt="Flowers in Chania" id="piz1">
+                        <p>Este rezultatul experientei pizzarilor nostri si a produselor de prima calitate. Folosim un Cuptor de caramida refractara alimentat cu lemn de fag care lucreaza la o temperatura de aproximativ 400 grade celsius si care ofera o
+                            coacere in mai putin de un minut a pizzei.</p>
+
+                    </div>
+
+
+                </div>
+                <div class="item2">
+
+                    <table id="tab-orar">
+                        <thead>
+                            <tr class="head">
+                                <th>Perioadă</th>
+                                <th>Zi</th>
+                                <th>Interval dimineata</th>
+                                <th>Pauza de masa</th>
+                                <th>Interval seară</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5" class="disable">Zile<br />Lucrătoare</td>
+                                <td>Luni</td>
+                                <td>10-12</td>
+                                <td>12-14</td>
+                                <td>14-20</td>
+                            </tr>
+                            <tr>
+
+                                <td>Marti</td>
+                                <td>9-12</td>
+                                <td>12-14</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+
+                                <td>Miercuri</td>
+                                <td>9-11</td>
+                                <td>11-13</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+
+                                <td>Joi</td>
+                                <td>9-11</td>
+                                <td>11-13</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+
+                                <td>Vineri</td>
+                                <td>9-12</td>
+                                <td>12-14</td>
+                                <td>14-19</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="disable">Weekend</td>
+                                <td>Sambata</td>
+                                <td>10-12</td>
+                                <td>12-13</td>
+                                <td>13-16</td>
+                            </tr>
+                            <tr>
+                                <td>Duminica</td>
+                                <td>10-14</td>
+                                <td>-</td>
+                                <td>inchis</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="item3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non turpis orci. Ut lobortis, ante in tristique gravida, odio arcu blandit purus, id eleifend felis lectus vitae diam. Nam et urna quis massa dignissim venenatis quis
+                        id dui. Suspendisse sagittis a purus ut varius. Donec ultricies blandit lorem eget sagittis. Proin vel ultrices nulla. Nullam lacinia mauris turpis, non dapibus orci dapibus ac. In dignissim lobortis nisl id consequat. Duis eleifend
+                        risus auctor libero efficitur pretium. Vestibulum in facilisis enim. Nullam sagittis massa vel nunc tincidunt elementum.</p>
+                </div>
+                <div class="item4">
+                    <p>Fusce non tincidunt nunc. Curabitur feugiat pellentesque turpis sed porttitor. Integer vitae finibus libero. Suspendisse et tellus vitae risus hendrerit condimentum a ut magna. Morbi finibus nunc a faucibus gravida. In tincidunt ante
+                        sed mauris luctus, eu tempus magna mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
+                <div class="item5">
+                    <p>Nulla vehicula risus felis, vitae fringilla augue placerat ac. Fusce ac nunc ut erat hendrerit hendrerit quis sed justo. Curabitur venenatis iaculis augue non vehicula. Etiam lobortis dignissim risus ut varius. Sed laoreet porttitor
+                        magna, eu lobortis massa iaculis mattis. In tempus sodales velit vel viverra. Aliquam erat volutpat. Nam sed tincidunt augue, vel iaculis massa. Integer pulvinar rhoncus vehicula. Ut pulvinar velit eget neque lacinia eleifend.
+                        Suspendisse potenti. Donec id consectetur tellus. Suspendisse potenti. Etiam tincidunt erat non nisi gravida, a volutpat tellus porta. Phasellus quis rhoncus turpis. Curabitur sed sagittis quam, nec eleifend lectus.
+                    </p>
+                </div>
+                <div class="item6">
+                    <p>Ip-ul tau este:
+                        <%- locals.ip%>
+                    </p>
+                </div>
+                <div class="item7">
+                    <p>Nullam commodo mattis enim, sit amet rhoncus augue semper ut. Nullam fermentum ut leo in molestie. In scelerisque, ligula sit amet placerat sagittis, turpis turpis rutrum magna, a maximus metus libero sit amet tortor. Cras non purus
+                        lacus. Donec in fermentum mi, sed interdum mauris. Donec imperdiet, turpis eget hendrerit fermentum, velit urna pretium erat, id pharetra mauris nulla non dui. Phasellus at risus non arcu elementum elementum. </p>
+                </div>
+                <div class="item8">
+                    <hr class="zig-zag-line">
+                    <%- include("../fragmente/galerie_statica") %>
+                        <p>Pentru comenzi ne gasiti pe <a href="https://www.foodpanda.ro/ ">food panda.</a></p>
+                        <details>
+                            <summary>Oferte</summary>
+
+                            <p>Oferte de luni:Pizza 1+1.</p>
+                            <P>Oferta de marti:Bautura gratis la 0.5L</p>
+                            <p>Oferta de joi:Desert gratis pentru fiecare pizza comandata</p>
+                            <p>Oferta de vineri:Doua toppinguri gratuite pentru fiecare pizza comandata</p>
+                            <p>Oferta de weekend:3+1 Pizza</p>
+
+
+                        </details>
+
+
+                        <article>
+                            <h2>Premii:</h2>
+
+                            <p>Locul 1 la <i>Business of the year 2019</i>.</p>
+                            <p>Mentiune la <i>International Pizza Challenge</i></p>
+                            <section>
+                                <h3>Slogan:</h3>
+                                <q>Când stomacul este plin, toţi îţi sunt dragi ca ochii din cap, când stomacul este gol, ţi-e
+                            dragă lumea ca sarea în ochi.</q>
+                            </section>
+                        </article>
+
+
+                        <section>
+                            <h2>Alergeni:</h2>
+                            <ul>
+                                <li>Peste</li>
+                                <li>Soia</li>
+                                <li>Gluten</li>
+                                <li>Lapte</li>
+                                <li>Alte produse derivate</li>
+                            </ul>
+                        </section>
+
+                        <details>
+                            <summary>Despre noi</summary>
+                            Secretul succesului nostru este acesta: preparăm și oferim întotdeauna mâncare consistentă și de calitate. Ne mândrim cu faptul că putem oferi întotdeauna clienților noștri preparate delicioase precum: Pizza, Burger, Fast Food La noi poți savura mâncare
+                            delicioasa sau servi o băutură. Dar inainte de toate, te poți relaxa. Vă mulțumim din toată inima pentru susținerea necondiționată pe care o oferiți restaurantului nostru.
+                        </details>
+
+                        <details class="det">
+                            <summary>Intrebari frecvente:</summary>
+                            <p>In cat timp imi vine comanda?</p>
+                            In maxim o ora.
+                            <p> Cum pot plati?</p>
+                            Cash sau card
+                            <p> Pana cand pot comanda?</p>
+                            Pizzeria lucreaza de la 10-24.
+                            <p>Imi pot configura propria pizza?</p>
+                            Sigur, aveti preturile in meniu.
+
+                        </details>
+
+                        <aside>
+                            <p>Aici veti gasi cea mai buna pizza din oras.Avem la dispozitie o multime de sortimente si
+                                <em>oferte tentante</em>
+                            </p>
+                        </aside>
+                        <ol>
+                            <li>Topping extra:</li>
+                            <li>Salam picant:3 lei</li>
+                            <li>Mozarella:3 lei</li>
+                            <li>Proscuto:4 lei</li>
+                        </ol>
+
+
+
+                        <div class="ifr">
+                            <iframe src="/resurse/imagini/pizza.jpg " name="iframe_a " title="Iframe Example" class="ifrr" scrolling="no"></iframe>
+                            <div class="taburi-iframe">
+                                <a href="https://www.youtube.com/embed/bwGE1Ggd2kQ " target="iframe_a ">Reteta Noastra</a>
+                                <a href="https://www.google.com/maps/d/u/0/embed?mid=1a6Y4yLGshES8YLG-JWQdiZ15ebMwXAc3 " target="iframe_a ">Locatia Noastra</a>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="item9 ">
+                    <div class="thm">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+
+                    </div>
+                    <script type="text/javascript" src="/resurse/js/theme.js"></script>
+                    <%- include("../fragmente/footer") %>
+
+                </div>
+            </div>
+            <a href="#" title="mergi sus" id="link-top">
+                <div id="cerc1">
+                    <div class="triunghi">
+                    </div>
+                </div>
+            </a>
+
+
+        </main>
+        <div class="banner">
+            Acesta este un proiect scolar!</div>
+
+
+</body>
+
+</html>

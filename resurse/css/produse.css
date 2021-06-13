@@ -1,0 +1,51 @@
+.produse {
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    margin: auto 0;
+}
+
+.nume a {
+    text-decoration: none;
+}
+
+.left p img {
+    margin: 0 auto;
+}
+
+.right p span,
+.left p span {
+    font-weight: bold;
+    color: rgb(160, 120, 46);
+}
+
+.right p,
+.left p {
+    color: black;
+}
+
+.right .nume span:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.coacere {
+    display: none;
+}
+
+#mediaProd {
+    display: none;
+    text-align: center;
+}
+
+#gasire-ingr {
+    display: none;
+    text-align: center;
+}

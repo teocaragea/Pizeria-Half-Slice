@@ -1,0 +1,29 @@
+.ifr {
+    display: flex;
+}
+
+.taburi-iframe a {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--c2);
+    border-style: double;
+    border-width: 5px;
+    border-left: none;
+    /*rotunjesc doar colturile de sus:*/
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgb(255, 163, 102);
+    transition: all 0.5s linear;
+    text-align: center;
+    padding: 1px;
+}
+
+.taburi-iframe a:hover {
+    /*ca sa anulez efectul gradientului si sa se vada imaginea din spate*/
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 194, 153);
+}

@@ -1,0 +1,19 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .09rem;
+}
+
+html {
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+body {
+    --c1: #F7F0C3;
+    --c2: #D6C06F;
+    --c3: #F5DAB5;
+    --c4: #FFE2AD;
+    --c5: #EBD9AE;
+    background-color: var(--c3);
+    overflow-x: hidden;
+}

@@ -1,0 +1,72 @@
+.print-banner {
+    display: none;
+}
+
+@media print {
+    .ifr, #galerie-statica, #link-top, .border, img, .banner {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    #header h1 {
+        text-align: center;
+    }
+    .meniu {
+        flex-direction: column;
+        page-break-after: always;
+    }
+    .item7 {
+        float: none;
+        page-break-after: always;
+    }
+    .print-banner {
+        display: block;
+        border: 3px double black;
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    #watermark {
+        width: 60%;
+        height: 20%;
+        margin: auto;
+        display: block;
+        position: fixed;
+        bottom: 40%;
+        right: 17%;
+        align-items: center;            
+        justify-content: center; 
+        opacity: 0.3;
+        z-index: 99;
+        text-align: center;
+    }
+    
+    #watermark::after {
+        font-size: 60px;
+        color: black;
+        opacity: inherit;
+        display: block;
+        content: "Theodor Caragea";
+        white-space: pre-wrap;
+        align-items: center;            
+        justify-content: center; 
+        
+    }
+}
+
+@page {
+    size: A4 portrait;
+    counter-increment: page;
+}
+@page:left{
+
+    margin-left:2cm;
+    margin-right:1cm;
+}
+@page:right{
+
+    margin-right:2cm;
+    margin-left:1cm;
+}

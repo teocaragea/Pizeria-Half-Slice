@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+
+    <meta name="description" content="Aici veti gasi informatii despre noi">
+    <meta name="keywords" content="produse,pizza">
+    <title>Pizeria Half-Slice-Produse</title>
+    <%- include("../fragmente/head") %>
+</head>
+
+
+<body class="bdy">
+
+    <%- include("../fragmente/header") %>
+
+        <main>
+            <section>
+                <h3>Produse</h3>
+
+                <article class="produse">
+                    <div class="left">
+                        <p class="categorie"><span>Categorie:</span>
+                            <%- prod.categorie %>
+                        </p>
+                        <p>
+                            <img src="/resurse/imagini/galerie/<%- prod.imagine%>" alt="imagine produs" style="width:40%;height:auto" />
+                        </p>
+                        <p class="descriere"><span>Descriere:</span>
+                            <%- prod.descriere %>
+                        </p>
+                    </div>
+                    <div class="right">
+
+                        <p class="nume"><span>Nume:</span>
+                            <a href="/produs/<%- prod.id %>">
+                                <%- prod.nume %>
+                            </a>
+                        </p>
+                        <p class="pret"><span>Pret:</span>
+                            <%- prod.pret %>
+                        </p>
+                        <p class="dimensiune"><span>Dimensiune:</span>
+                            <%- prod.dimensiune %>
+                        </p>
+                        <p class="gramaj"><span>Gramaj:</span>
+                            <%- prod.gramaj %>
+                        </p>
+                        <p class="coacere"><span>Mod coacere:</span>
+                            <%- prod.coacere %>
+                        </p>
+                        <p class="ingrediente"><span>Ingrediente:</span>
+                            <%- prod.ingrediente %>
+                        </p>
+                        <time class="time"><span>Data introducerii:</span>
+                            <%- prod.introducere %>
+                        </time>
+                        <p class="post"><span>Produs de post:</span>
+                            <% if(prod.post == false) { %>
+                                <%- 'nu' %>
+                                    <% } %>
+                                        <%if(prod.post == true) { %>
+                                            <%- 'da' %>
+                                                <% } %>
+
+                        </p>
+
+                    </div>
+                </article>
+
+
+            </section>
+
+        </main>
+
+        <%- include("../fragmente/footer") %>;
+
+
+
+
+
+
+</body>
+
+</html>

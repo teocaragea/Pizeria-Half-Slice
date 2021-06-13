@@ -1,0 +1,12 @@
+body {
+    counter-reset: section;
+}
+
+th::before {
+    counter-increment: section;
+    content: counter(section) ".";
+}
+
+#tab-orar {
+    font-size: .9rem;
+}

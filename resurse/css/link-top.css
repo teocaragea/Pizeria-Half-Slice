@@ -1,0 +1,49 @@
+#link-top{
+    position: fixed;
+    display:block;
+    opacity:0.6;
+    bottom:0;
+    right:0;
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-radius: 0.7rem;
+    border-bottom-right-radius: 0px;
+    overflow:visible;
+    z-index: 30;
+}
+
+#cerc1 {
+    opacity: 0.5;
+    margin: 10px auto 0 auto;
+    height: 30px;
+    width: 40px;
+    border-radius: 45%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triunghi {
+    position: relative;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #555;
+    opacity:0.5;
+    transition: opacity .5s;
+    transition: top ease .5s;
+    transition: color .5;
+}
+
+#cerc1:hover .triunghi {
+    opacity: 1;
+    border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid var(--c2);
+    top: -6px;
+}

@@ -1,0 +1,14 @@
+hr {
+    border: none;
+}
+
+.zig-zag-line {
+    height: 15px;
+    background: repeating-linear-gradient(90deg, var(--c2) 0 5px, #0000 0 10px) top, /* top gradient*/
+    repeating-linear-gradient(90deg, #0000 0 5px, var(--c2) 0 10px) bottom, /* bottom  gradient*/
+    linear-gradient(var(--c2) 0 0) center;
+    /* a line in the middle */
+    background-size: 200% calc(100%/3);
+    /* the 3 with the same size */
+    background-repeat: no-repeat;
+}
